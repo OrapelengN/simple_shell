@@ -130,7 +130,7 @@ int _putsfd(char *str, int fd);
 /* toe,_string.c */
 int _strlen(char *);
 int _strcmp(char *, char *);
-char *starts_with(const_char *, const char *);
+char *starts_with(const char *, const char *);
 char *_strcat(char *, char *);
 
 /* toem_string1.c */
@@ -178,8 +178,8 @@ int _myhelp(info_t *);
 int _myhistory(info_t *);
 int _myalias(info_t *);
 
-/*toem_getline.c */
-ssize_t getline(info_t *);
+/*toem_getLine.c */
+ssize_t get_input(info_t *);
 int _getline(info_t *, char**, size_t *);
 void sigintHandler(int);
 

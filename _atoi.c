@@ -22,7 +22,7 @@ return (isatty(STDIN_FILENO) && data->readfd <= 2);
 int is_delim(char sym, char *delim_s)
 {
 while (*delim_s)
-if (*delim_s++ == sys)
+if (*delim_s++ == sym)
 {
 return (1);
 }
@@ -37,7 +37,7 @@ return (0);
 
 int _isalpha(int sym)
 {
-if ((sym >= 'a' && sys <= 'z') || (sys >= 'A' && sys <= 'Z'))
+if ((sym >= 'a' && sym <= 'z') || (sym >= 'A' && sym <= 'Z'))
 return (1);
 else
 return (0);
